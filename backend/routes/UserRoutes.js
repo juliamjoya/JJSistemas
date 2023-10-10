@@ -6,6 +6,8 @@ const {UserControllers} = require('../controllers'); //Usando destructer
 //router.get('/', controllers.UserControllers.getUsers);
 router.get('/', UserControllers.getUsers);
 
+router.get('/:id', UserControllers.getOneUser);
+
 router.post('/', UserControllers.createUser);
 
 router.put('/:id', UserControllers.putUser);

@@ -8,9 +8,10 @@ const Routes = require('./routes');
 //   res.send('Hello World!');
 // });
 
+app.use(express.json()); //Para que parsee lo que recibe en JSON
 app.use('/users', Routes.UserRoutes);
 app.use('/api', Routes.ApiRoutes);
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Api para la tienda virtual JJSistemas escuchando en el puerto ${port}`);
 });
