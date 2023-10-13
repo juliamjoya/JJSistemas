@@ -2,7 +2,7 @@ const express = require('express');
 const server = express();
 const port = 3000;
 
-const Routes = require('./routes');
+// const Routes = require('./routes');
 
 server.get('/', (req, res) => {
   res.send('API para la tienda virtual JJsistemas');
